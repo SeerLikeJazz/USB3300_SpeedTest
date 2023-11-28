@@ -1,0 +1,9 @@
+.\stm32f4-discovery_usbd-hs\usbd_core.o: ..\..\STM32Cube_FW_F4_V1.8.0\Middlewares\ST\STM32_USB_Device_Library\Core\Src\usbd_core.c
+.\stm32f4-discovery_usbd-hs\usbd_core.o: ..\..\STM32Cube_FW_F4_V1.8.0\Middlewares\ST\STM32_USB_Device_Library\Core\Inc\usbd_core.h
+.\stm32f4-discovery_usbd-hs\usbd_core.o: ..\Inc\usbd_conf.h
+.\stm32f4-discovery_usbd-hs\usbd_core.o: ..\..\STM32Cube_FW_F4_V1.8.0\Drivers\STM32F4xx_HAL_Driver\Inc\stm32f4xx_hal.h
+.\stm32f4-discovery_usbd-hs\usbd_core.o: ..\Inc\stm32f4xx_hal_conf.h
+.\stm32f4-discovery_usbd-hs\usbd_core.o: ..\..\STM32Cube_FW_F4_V1.8.0\Drivers\STM32F4xx_HAL_Driver\Inc\stm32f4xx_hal_rcc.h
+.\stm32f4-discovery_usbd-hs\usbd_core.o: ..\..\STM32Cube_FW_F4_V1.8.0\Drivers\STM32F4xx_HAL_Driver\Inc\stm32f4xx_hal_def.h
+.\stm32f4-discovery_usbd-hs\usbd_core.o: ..\..\STM32Cube_FW_F4_V1.8.0\Drivers\CMSIS\Device\ST\STM32F4xx\Include\stm32f4xx.h
+.\stm32f4-discovery_usbd-hs\usbd_core.o: ..\..\STM32Cube_FW_F4_V1.8.0\Drivers\CMSIS\Device\ST\STM32F4xx\Include\stm32f407xx.h

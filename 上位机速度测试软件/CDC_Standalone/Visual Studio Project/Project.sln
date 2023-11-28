@@ -1,0 +1,19 @@
+Microsoft Visual Studio Solution File, Format Version 11.00
+# Visual Studio 2010
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "Project", "Project.vcxproj", "{630C639D-C434-4F17-AB2D-5D46AF7B2116}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		STM32F4-Discovery_USBD-FS|Win32 = STM32F4-Discovery_USBD-FS|Win32
+		STM32F4-Discovery_USBD-HS|Win32 = STM32F4-Discovery_USBD-HS|Win32
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{d45044f4-91ff-49fe-867a-ed13fe46ac0a}.STM32F4-Discovery_USBD-FS|Win32.ActiveCfg = STM32F4-Discovery_USBD-FS|Win32
+		{d45044f4-91ff-49fe-867a-ed13fe46ac0a}.STM32F4-Discovery_USBD-FS|Win32.Build.0 = STM32F4-Discovery_USBD-FS|Win32
+		{d45044f4-91ff-49fe-867a-ed13fe46ac0a}.STM32F4-Discovery_USBD-HS|Win32.ActiveCfg = STM32F4-Discovery_USBD-HS|Win32
+		{d45044f4-91ff-49fe-867a-ed13fe46ac0a}.STM32F4-Discovery_USBD-HS|Win32.Build.0 = STM32F4-Discovery_USBD-HS|Win32
+	EndGlobalSection
+		GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+EndGlobal

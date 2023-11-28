@@ -1,0 +1,94 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project DefaultTargets="Build" ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup Label="ProjectConfigurations">
+    <ProjectConfiguration Include="STM32F4-Discovery_USBD-FS|Win32">
+      <Configuration>STM32F4-Discovery_USBD-FS</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="STM32F4-Discovery_USBD-HS|Win32">
+      <Configuration>STM32F4-Discovery_USBD-HS</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+  </ItemGroup>
+  <PropertyGroup Label="Globals">
+    <ProjectGuid>{c29cf17b-4ae0-4bfe-8f86-42e3ef98fa6b}</ProjectGuid>
+    <Keyword>MakeFileProj</Keyword>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.Default.props" />
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='STM32F4-Discovery_USBD-FS|Win32'" Label="Configuration">
+    <ConfigurationType>Makefile</ConfigurationType>
+    <UseDebugLibraries>true</UseDebugLibraries>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='STM32F4-Discovery_USBD-HS|Win32'" Label="Configuration">
+    <ConfigurationType>Makefile</ConfigurationType>
+    <UseDebugLibraries>true</UseDebugLibraries>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.props" />
+  <ImportGroup Label="ExtensionSettings" />
+  <ImportGroup Condition="'$(Configuration)|$(Platform)'=='STM32F4-Discovery_USBD-FS|Win32'" Label="PropertySheets">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <ImportGroup Condition="'$(Configuration)|$(Platform)'=='STM32F4-Discovery_USBD-HS|Win32'" Label="PropertySheets">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <PropertyGroup Label="UserMacros" />
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='STM32F4-Discovery_USBD-FS|Win32'">
+    <NMakeOutput>Project.exe</NMakeOutput>
+    <NMakePreprocessorDefinitions>USE_HAL_DRIVER,STM32F407xx,USE_STM32F4_DISCO,USE_USB_FS</NMakePreprocessorDefinitions>
+    <IncludePath>..\Inc;..\..\..\..\..\Drivers\CMSIS\Include;..\..\..\..\..\Drivers\CMSIS\Device\ST\STM32F4xx\Include;..\..\..\..\..\Drivers\STM32F4xx_HAL_Driver\Inc;..\..\..\..\..\Drivers\BSP\STM32F4-Discovery;..\..\..\..\..\Middlewares\ST\STM32_USB_Device_Library\Core\Inc;..\..\..\..\..\Middlewares\ST\STM32_USB_Device_Library\Class\CDC\Inc;..\..\..\..\..\Drivers\BSP\Component;..\..\..\..\..\Drivers\STM32F4xx_HAL_Driver\Inc;</IncludePath>
+    <NMakeBuildCommandLine>"G:\Keil\UV4\UV4.exe " -b ..\MDK-ARM\Project.uvproj -t "STM32F4-Discovery_USBD-FS" -j0 -o Build.log</NMakeBuildCommandLine>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='STM32F4-Discovery_USBD-HS|Win32'">
+    <NMakeOutput>Project.exe</NMakeOutput>
+    <NMakePreprocessorDefinitions>USE_HAL_DRIVER,STM32F407xx,USE_STM32F4_DISCO,USE_USB_HS</NMakePreprocessorDefinitions>
+    <IncludePath>..\Inc;..\..\STM32Cube_FW_F4_V1.8.0\Drivers\CMSIS\Device\ST\STM32F4xx\Include;..\..\STM32Cube_FW_F4_V1.8.0\Drivers\STM32F4xx_HAL_Driver\Inc;..\..\STM32Cube_FW_F4_V1.8.0\Drivers\BSP\STM32F4-Discovery;..\..\STM32Cube_FW_F4_V1.8.0\Drivers\BSP\Component;..\..\STM32Cube_FW_F4_V1.8.0\Middlewares\ST\STM32_USB_Device_Library\Core\Inc;..\..\STM32Cube_FW_F4_V1.8.0\Middlewares\ST\STM32_USB_Device_Library\Class\CDC\Inc;</IncludePath>
+    <NMakeBuildCommandLine>"G:\Keil\UV4\UV4.exe " -b ..\MDK-ARM\Project.uvproj -t "STM32F4-Discovery_USBD-HS" -j0 -o Build.log</NMakeBuildCommandLine>
+  </PropertyGroup>
+  <ItemDefinitionGroup></ItemDefinitionGroup>
+  <ItemGroup>
+    <None Include="..\MDK-ARM\startup_stm32f407xx.s" />
+    <None Include="..\readme.txt" />
+    <None Include="Readme.txt" />
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="..\Src\main.c" />
+    <ClCompile Include="..\Src\stm32f4xx_it.c" />
+    <ClCompile Include="..\Src\usbd_cdc_interface.c" />
+    <ClCompile Include="..\Src\usbd_conf.c" />
+    <ClCompile Include="..\Src\usbd_desc.c" />
+    <ClCompile Include="..\..\STM32Cube_FW_F4_V1.8.0\Drivers\BSP\STM32F4-Discovery\stm32f4_discovery.c" />
+    <ClCompile Include="..\Src\system_stm32f4xx.c" />
+    <ClCompile Include="..\..\STM32Cube_FW_F4_V1.8.0\Drivers\STM32F4xx_HAL_Driver\Src\stm32f4xx_hal.c" />
+    <ClCompile Include="..\..\STM32Cube_FW_F4_V1.8.0\Drivers\STM32F4xx_HAL_Driver\Src\stm32f4xx_hal_cortex.c" />
+    <ClCompile Include="..\..\STM32Cube_FW_F4_V1.8.0\Drivers\STM32F4xx_HAL_Driver\Src\stm32f4xx_hal_dma.c" />
+    <ClCompile Include="..\..\STM32Cube_FW_F4_V1.8.0\Drivers\STM32F4xx_HAL_Driver\Src\stm32f4xx_hal_dma_ex.c" />
+    <ClCompile Include="..\..\STM32Cube_FW_F4_V1.8.0\Drivers\STM32F4xx_HAL_Driver\Src\stm32f4xx_hal_flash.c" />
+    <ClCompile Include="..\..\STM32Cube_FW_F4_V1.8.0\Drivers\STM32F4xx_HAL_Driver\Src\stm32f4xx_hal_flash_ex.c" />
+    <ClCompile Include="..\..\STM32Cube_FW_F4_V1.8.0\Drivers\STM32F4xx_HAL_Driver\Src\stm32f4xx_hal_gpio.c" />
+    <ClCompile Include="..\..\STM32Cube_FW_F4_V1.8.0\Drivers\STM32F4xx_HAL_Driver\Src\stm32f4xx_hal_hcd.c" />
+    <ClCompile Include="..\..\STM32Cube_FW_F4_V1.8.0\Drivers\STM32F4xx_HAL_Driver\Src\stm32f4xx_hal_i2c.c" />
+    <ClCompile Include="..\..\STM32Cube_FW_F4_V1.8.0\Drivers\STM32F4xx_HAL_Driver\Src\stm32f4xx_hal_i2c_ex.c" />
+    <ClCompile Include="..\..\STM32Cube_FW_F4_V1.8.0\Drivers\STM32F4xx_HAL_Driver\Src\stm32f4xx_hal_i2s.c" />
+    <ClCompile Include="..\..\STM32Cube_FW_F4_V1.8.0\Drivers\STM32F4xx_HAL_Driver\Src\stm32f4xx_hal_i2s_ex.c" />
+    <ClCompile Include="..\..\STM32Cube_FW_F4_V1.8.0\Drivers\STM32F4xx_HAL_Driver\Src\stm32f4xx_hal_pcd.c" />
+    <ClCompile Include="..\..\STM32Cube_FW_F4_V1.8.0\Drivers\STM32F4xx_HAL_Driver\Src\stm32f4xx_hal_pcd_ex.c" />
+    <ClCompile Include="..\..\STM32Cube_FW_F4_V1.8.0\Drivers\STM32F4xx_HAL_Driver\Src\stm32f4xx_hal_pwr.c" />
+    <ClCompile Include="..\..\STM32Cube_FW_F4_V1.8.0\Drivers\STM32F4xx_HAL_Driver\Src\stm32f4xx_hal_pwr_ex.c" />
+    <ClCompile Include="..\..\STM32Cube_FW_F4_V1.8.0\Drivers\STM32F4xx_HAL_Driver\Src\stm32f4xx_hal_rcc.c" />
+    <ClCompile Include="..\..\STM32Cube_FW_F4_V1.8.0\Drivers\STM32F4xx_HAL_Driver\Src\stm32f4xx_hal_rcc_ex.c" />
+    <ClCompile Include="..\..\STM32Cube_FW_F4_V1.8.0\Drivers\STM32F4xx_HAL_Driver\Src\stm32f4xx_hal_sd.c" />
+    <ClCompile Include="..\..\STM32Cube_FW_F4_V1.8.0\Drivers\STM32F4xx_HAL_Driver\Src\stm32f4xx_hal_spi.c" />
+    <ClCompile Include="..\..\STM32Cube_FW_F4_V1.8.0\Drivers\STM32F4xx_HAL_Driver\Src\stm32f4xx_hal_sram.c" />
+    <ClCompile Include="..\..\STM32Cube_FW_F4_V1.8.0\Drivers\STM32F4xx_HAL_Driver\Src\stm32f4xx_hal_tim.c" />
+    <ClCompile Include="..\..\STM32Cube_FW_F4_V1.8.0\Drivers\STM32F4xx_HAL_Driver\Src\stm32f4xx_hal_tim_ex.c" />
+    <ClCompile Include="..\..\STM32Cube_FW_F4_V1.8.0\Drivers\STM32F4xx_HAL_Driver\Src\stm32f4xx_hal_uart.c" />
+    <ClCompile Include="..\..\STM32Cube_FW_F4_V1.8.0\Drivers\STM32F4xx_HAL_Driver\Src\stm32f4xx_ll_fsmc.c" />
+    <ClCompile Include="..\..\STM32Cube_FW_F4_V1.8.0\Drivers\STM32F4xx_HAL_Driver\Src\stm32f4xx_ll_usb.c" />
+    <ClCompile Include="..\..\STM32Cube_FW_F4_V1.8.0\Middlewares\ST\STM32_USB_Device_Library\Class\CDC\Src\usbd_cdc.c" />
+    <ClCompile Include="..\..\STM32Cube_FW_F4_V1.8.0\Middlewares\ST\STM32_USB_Device_Library\Core\Src\usbd_core.c" />
+    <ClCompile Include="..\..\STM32Cube_FW_F4_V1.8.0\Middlewares\ST\STM32_USB_Device_Library\Core\Src\usbd_ctlreq.c" />
+    <ClCompile Include="..\..\STM32Cube_FW_F4_V1.8.0\Middlewares\ST\STM32_USB_Device_Library\Core\Src\usbd_ioreq.c" />
+  </ItemGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
+  <ImportGroup Label="ExtensionTargets"></ImportGroup>
+</Project>

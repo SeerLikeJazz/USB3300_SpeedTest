@@ -1,0 +1,165 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project DefaultTargets="Build" ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <Filter Include="源文件">
+      <UniqueIdentifier>{d71cf4f4-2076-4f86-888f-d2685744f43f}</UniqueIdentifier>
+      <Extensions>cpp;c;cc;cxx;def;odl;idl;hpj;bat;asm;asmx</Extensions>
+    </Filter>
+    <Filter Include="头文件">
+      <UniqueIdentifier>{d8769c02-b442-4306-a0fe-56bc3645efa0}</UniqueIdentifier>
+      <Extensions>h;hpp;hxx;hm;inl;inc;xsd</Extensions>
+    </Filter>
+    <Filter Include="项目说明">
+      <UniqueIdentifier>{bd09a014-0a30-449f-b3c1-45030d047099}</UniqueIdentifier>
+      <Extensions>txt</Extensions>
+    </Filter>
+    <Filter Include="源文件\Application/MDK-ARM">
+      <UniqueIdentifier>{0baf12ec-c3bc-4191-9dbc-fc5f2cb42a1a}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="源文件\Application/User">
+      <UniqueIdentifier>{6b90bb37-b0c2-48eb-a19a-60b9080699a7}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="源文件\Doc">
+      <UniqueIdentifier>{b2d5a76b-331e-4dd4-a49c-f26796030b54}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="源文件\Drivers/BSP/STM32F4-Discovery">
+      <UniqueIdentifier>{5620bdaf-f650-4561-b350-a6423657237d}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="源文件\Drivers/CMSIS">
+      <UniqueIdentifier>{7574808c-e768-41d8-9472-8a8da4691571}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="源文件\Drivers/STM32F4xx_HAL_Driver">
+      <UniqueIdentifier>{65ab118f-1596-4b56-84b1-4bfe8e55b114}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="源文件\Middlewares/STM32_USBD_Library/Class/CDC">
+      <UniqueIdentifier>{aac2b4cc-32ab-45c9-8249-5b3c0039b0a3}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="源文件\Middlewares/STM32_USBD_Library/Core">
+      <UniqueIdentifier>{04534f7f-bf21-48e0-a9d9-4f53387384e4}</UniqueIdentifier>
+    </Filter>
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="..\Src\main.c">
+      <Filter>源文件\Application/User</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Src\stm32f4xx_it.c">
+      <Filter>源文件\Application/User</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Src\usbd_cdc_interface.c">
+      <Filter>源文件\Application/User</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Src\usbd_conf.c">
+      <Filter>源文件\Application/User</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Src\usbd_desc.c">
+      <Filter>源文件\Application/User</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\STM32Cube_FW_F4_V1.8.0\Drivers\BSP\STM32F4-Discovery\stm32f4_discovery.c">
+      <Filter>源文件\Drivers/BSP/STM32F4-Discovery</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Src\system_stm32f4xx.c">
+      <Filter>源文件\Drivers/CMSIS</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\STM32Cube_FW_F4_V1.8.0\Drivers\STM32F4xx_HAL_Driver\Src\stm32f4xx_hal.c">
+      <Filter>源文件\Drivers/STM32F4xx_HAL_Driver</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\STM32Cube_FW_F4_V1.8.0\Drivers\STM32F4xx_HAL_Driver\Src\stm32f4xx_hal_cortex.c">
+      <Filter>源文件\Drivers/STM32F4xx_HAL_Driver</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\STM32Cube_FW_F4_V1.8.0\Drivers\STM32F4xx_HAL_Driver\Src\stm32f4xx_hal_dma.c">
+      <Filter>源文件\Drivers/STM32F4xx_HAL_Driver</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\STM32Cube_FW_F4_V1.8.0\Drivers\STM32F4xx_HAL_Driver\Src\stm32f4xx_hal_dma_ex.c">
+      <Filter>源文件\Drivers/STM32F4xx_HAL_Driver</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\STM32Cube_FW_F4_V1.8.0\Drivers\STM32F4xx_HAL_Driver\Src\stm32f4xx_hal_flash.c">
+      <Filter>源文件\Drivers/STM32F4xx_HAL_Driver</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\STM32Cube_FW_F4_V1.8.0\Drivers\STM32F4xx_HAL_Driver\Src\stm32f4xx_hal_flash_ex.c">
+      <Filter>源文件\Drivers/STM32F4xx_HAL_Driver</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\STM32Cube_FW_F4_V1.8.0\Drivers\STM32F4xx_HAL_Driver\Src\stm32f4xx_hal_gpio.c">
+      <Filter>源文件\Drivers/STM32F4xx_HAL_Driver</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\STM32Cube_FW_F4_V1.8.0\Drivers\STM32F4xx_HAL_Driver\Src\stm32f4xx_hal_hcd.c">
+      <Filter>源文件\Drivers/STM32F4xx_HAL_Driver</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\STM32Cube_FW_F4_V1.8.0\Drivers\STM32F4xx_HAL_Driver\Src\stm32f4xx_hal_i2c.c">
+      <Filter>源文件\Drivers/STM32F4xx_HAL_Driver</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\STM32Cube_FW_F4_V1.8.0\Drivers\STM32F4xx_HAL_Driver\Src\stm32f4xx_hal_i2c_ex.c">
+      <Filter>源文件\Drivers/STM32F4xx_HAL_Driver</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\STM32Cube_FW_F4_V1.8.0\Drivers\STM32F4xx_HAL_Driver\Src\stm32f4xx_hal_i2s.c">
+      <Filter>源文件\Drivers/STM32F4xx_HAL_Driver</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\STM32Cube_FW_F4_V1.8.0\Drivers\STM32F4xx_HAL_Driver\Src\stm32f4xx_hal_i2s_ex.c">
+      <Filter>源文件\Drivers/STM32F4xx_HAL_Driver</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\STM32Cube_FW_F4_V1.8.0\Drivers\STM32F4xx_HAL_Driver\Src\stm32f4xx_hal_pcd.c">
+      <Filter>源文件\Drivers/STM32F4xx_HAL_Driver</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\STM32Cube_FW_F4_V1.8.0\Drivers\STM32F4xx_HAL_Driver\Src\stm32f4xx_hal_pcd_ex.c">
+      <Filter>源文件\Drivers/STM32F4xx_HAL_Driver</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\STM32Cube_FW_F4_V1.8.0\Drivers\STM32F4xx_HAL_Driver\Src\stm32f4xx_hal_pwr.c">
+      <Filter>源文件\Drivers/STM32F4xx_HAL_Driver</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\STM32Cube_FW_F4_V1.8.0\Drivers\STM32F4xx_HAL_Driver\Src\stm32f4xx_hal_pwr_ex.c">
+      <Filter>源文件\Drivers/STM32F4xx_HAL_Driver</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\STM32Cube_FW_F4_V1.8.0\Drivers\STM32F4xx_HAL_Driver\Src\stm32f4xx_hal_rcc.c">
+      <Filter>源文件\Drivers/STM32F4xx_HAL_Driver</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\STM32Cube_FW_F4_V1.8.0\Drivers\STM32F4xx_HAL_Driver\Src\stm32f4xx_hal_rcc_ex.c">
+      <Filter>源文件\Drivers/STM32F4xx_HAL_Driver</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\STM32Cube_FW_F4_V1.8.0\Drivers\STM32F4xx_HAL_Driver\Src\stm32f4xx_hal_sd.c">
+      <Filter>源文件\Drivers/STM32F4xx_HAL_Driver</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\STM32Cube_FW_F4_V1.8.0\Drivers\STM32F4xx_HAL_Driver\Src\stm32f4xx_hal_spi.c">
+      <Filter>源文件\Drivers/STM32F4xx_HAL_Driver</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\STM32Cube_FW_F4_V1.8.0\Drivers\STM32F4xx_HAL_Driver\Src\stm32f4xx_hal_sram.c">
+      <Filter>源文件\Drivers/STM32F4xx_HAL_Driver</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\STM32Cube_FW_F4_V1.8.0\Drivers\STM32F4xx_HAL_Driver\Src\stm32f4xx_hal_tim.c">
+      <Filter>源文件\Drivers/STM32F4xx_HAL_Driver</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\STM32Cube_FW_F4_V1.8.0\Drivers\STM32F4xx_HAL_Driver\Src\stm32f4xx_hal_tim_ex.c">
+      <Filter>源文件\Drivers/STM32F4xx_HAL_Driver</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\STM32Cube_FW_F4_V1.8.0\Drivers\STM32F4xx_HAL_Driver\Src\stm32f4xx_hal_uart.c">
+      <Filter>源文件\Drivers/STM32F4xx_HAL_Driver</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\STM32Cube_FW_F4_V1.8.0\Drivers\STM32F4xx_HAL_Driver\Src\stm32f4xx_ll_fsmc.c">
+      <Filter>源文件\Drivers/STM32F4xx_HAL_Driver</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\STM32Cube_FW_F4_V1.8.0\Drivers\STM32F4xx_HAL_Driver\Src\stm32f4xx_ll_usb.c">
+      <Filter>源文件\Drivers/STM32F4xx_HAL_Driver</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\STM32Cube_FW_F4_V1.8.0\Middlewares\ST\STM32_USB_Device_Library\Class\CDC\Src\usbd_cdc.c">
+      <Filter>源文件\Middlewares/STM32_USBD_Library/Class/CDC</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\STM32Cube_FW_F4_V1.8.0\Middlewares\ST\STM32_USB_Device_Library\Core\Src\usbd_core.c">
+      <Filter>源文件\Middlewares/STM32_USBD_Library/Core</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\STM32Cube_FW_F4_V1.8.0\Middlewares\ST\STM32_USB_Device_Library\Core\Src\usbd_ctlreq.c">
+      <Filter>源文件\Middlewares/STM32_USBD_Library/Core</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\STM32Cube_FW_F4_V1.8.0\Middlewares\ST\STM32_USB_Device_Library\Core\Src\usbd_ioreq.c">
+      <Filter>源文件\Middlewares/STM32_USBD_Library/Core</Filter>
+    </ClCompile>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="..\MDK-ARM\startup_stm32f407xx.s">
+      <Filter>源文件\Application/MDK-ARM</Filter>
+    </None>
+    <None Include="..\readme.txt">
+      <Filter>源文件\Doc</Filter>
+    </None>
+    <None Include="Readme.txt">
+      <Filter>项目说明\</Filter>
+    </None>
+  </ItemGroup>
+</Project>
